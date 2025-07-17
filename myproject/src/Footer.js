@@ -1,28 +1,15 @@
-import React from 'react'
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import "bootstrap/dist/css/bootstrap.min.css";
-import Container from 'react-bootstrap/Container';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Footer = () => {
-    return (
-        <div>
-            <Navbar bg="primary" variant="dark" fixed="bottom">
-                <Container>
-                <Navbar.Brand href="#home">
-                    <img
-                    alt=""
-                    src="logo192.png"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    />{' '}
-                    React Bootstrap
-                </Navbar.Brand>
-                </Container>
-            </Navbar>
-        </div>
-    )
-}
-
-export default Footer
+    return ( 
+        <Container fluid className = "App-footer"> 
+        <Row>
+            <Col> Footer </Col>  
+        </Row>  
+        </Container> 
+    );
+};
+export default Footer;
